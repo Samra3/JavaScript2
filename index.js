@@ -72,3 +72,69 @@ console.log(result);
     console.log(x, typeof x);
     console.log(y, typeof y);
     console.log(z, typeof z);
+
+// const
+const PI = 3.14159;
+let radius;
+let circumference; 
+
+//radius = window.prompt("Enter the radius of a circle");
+radius = Number(radius); 
+
+//PI = 420.69;
+
+circumference = 2 * PI * radius;
+
+console.log("The circumference is:", circumference);
+
+// Math
+
+let p = 3.71; 
+
+p = Math.round(p); 
+
+console.log(p);
+
+let n = 3.14;
+let l = 5; 
+let v = 9;
+let maximum; 
+let minimun; 
+//n = Math.floor(n);
+//n = Math.ceil(n);
+//n = Math.pow(n, 2);
+//n = Math.sqrt(n);
+//n = Math.abs(n);
+//maximum = Math.max(n, l, v);
+//minimum = Math.min(n, l, v);
+n = Math.PI;
+console.log(n);
+
+// Hypotenuse calc practice program 
+
+/* let a; 
+let b; 
+let c;
+
+a = window.prompt("Enter side A");
+a = Number(a);
+b = window.prompt("Enter side B");
+b = Number(b);
+
+c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+console.log("Side C:", c); */
+
+document.getElementById("submitButton").onclick = function() {
+    
+    a = document.getElementById("aTextBox").value;
+    a = Number(a);
+
+    b = document.getElementById("bTextBox").value;
+    b = Number(b);
+
+    c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+    document.getElementById("cLabel").innerHTML = "Side C: " + c;
+}
+
