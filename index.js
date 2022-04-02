@@ -154,3 +154,26 @@ document.getElementById("increaseBtn").onclick = function() {
     count +=1;
     document.getElementById("countLabel").innerHTML =  count;
 }
+
+// Random number generator 
+
+let u = Math.floor(Math.random() * 6) + 1;
+let w = Math.floor(Math.random() * 6) + 1;
+let t = Math.floor(Math.random() * 6) + 1;
+
+document.getElementById("rollButton").onclick = function() {
+
+    u = Math.floor(Math.random() * 6) + 1;
+    w = Math.floor(Math.random() * 6) + 1;
+    t = Math.floor(Math.random() * 6) + 1;
+
+    document.getElementById("uLabel").innerHTML = u;
+    document.getElementById("wLabel").innerHTML = w;
+    document.getElementById("tLabel").innerHTML = t;
+} 
+
+// Useful string methods 
+
+let userName = "Samra Raković";
+
+console.log(userName.length);
