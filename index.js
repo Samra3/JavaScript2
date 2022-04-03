@@ -175,5 +175,94 @@ document.getElementById("rollButton").onclick = function() {
 // Useful string methods 
 
 let userName = "Samra Raković";
+let phoneNumber = "123-456-7890";
 
-console.log(userName.length);
+//console.log(userName.length);
+//console.log(userName.charAt(0));
+//console.log(userName.indexOf("o"));
+//console.log(userName.lastIndexOf("a"));
+//userName = userName.trim();
+//userName = userName.toUpperCase();
+//userName = userName.toLowerCase();
+
+phoneNumber = phoneNumber.replaceAll("-", "/");
+
+console.log(userName);
+console.log(phoneNumber);
+
+// String slicing
+
+let fullName = "Samra Raković";
+let fName;
+let lastName; 
+
+//fName = fullName.slice(0, 5);
+//lastName = fullName.slice(6);
+
+fName = fullName.slice(0, fullName.indexOf(" "));
+lastName = fullName.slice(fullName.indexOf(" ") + 1);
+
+console.log(fName);
+console.log(lastName);
+
+// Method chaining 
+
+let uName = "samra"; 
+
+let letter = uName.charAt(0).toUpperCase().trim();
+
+console.log(letter);
+
+// if statement 
+
+/* let ageN = 75; 
+
+if(ageN >= 65){
+    console.log("You are a senior citizen!");
+}
+else if(ageN >= 18){
+    console.log("You are an adult!");
+}
+else if (ageN < 0){
+    console.log("YOU HAVEN'T BEEN BORN YET!");
+}
+else{
+    console.log("You are a child!");
+} */
+
+let online = false;
+if(online){
+    console.log("You are online!"); 
+}
+else{
+    console.log("You are offline!");
+}
+
+// checked propery
+
+document.getElementById("myButton1").onclick = function() {
+    const myCheckBox = document.getElementById("myCheckBox");
+    const visaBtn = document.getElementById("visaBtn");
+    const mastercardBtn = document.getElementById("mastercardBtn");
+    const paypalBtn = document.getElementById("paypalBtn");
+
+    if(myCheckBox.checked) {
+        console.log("You are subscribed!");
+    }
+    else{
+        console.log("You are not subscribed!");
+    }
+
+    if(visaBtn.checked){
+        console.log("You are paying with a Visa!");
+    }
+    else if(mastercardBtn.checked){
+        console.log("You are paying with a Mastercard!");
+    }
+    else if(paypalBtn.checked){
+        console.log("You are paying with a Paypal!");
+    }
+    else{
+        console.log("You must select a payment type!");
+    }
+}
