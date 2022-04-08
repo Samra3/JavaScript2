@@ -315,10 +315,73 @@ switch(true) {
 } 
 
 // AND OR logical operators
-let temp = 15; 
+/* let temp = 50; 
 if(temp > 0 && temp < 30) {
     console.log("The weather is good!");
 }
 else {
     console.log("The weather is bad!");
+} */
+
+/* let temp = -10; 
+if(temp <= 0  || temp >= 30) {
+    console.log('The weather is bad!');
 }
+else {
+    console.log('The weather is good!');
+} */
+
+let temp = 15;
+let sunny = false; 
+
+if(temp > 0  && temp < 30 && sunny) {
+    console.log('The weather is good!');
+}
+else {
+    console.log('The weather is bad!');
+}
+
+// NOT logical operator
+let tempO = 15; 
+let sunnyI = false;
+if(!(tempO > 0)){
+    console.log("It's cold outside");
+}
+else{
+    console.log("It's warm outside");
+}
+if(!sunnyI) {
+    console.log("It's cloudy outside");
+}
+else{
+    console.log("It's sunny outside");
+}
+
+// While loop 
+/* let userNameN = ""; 
+while(userNameN == "" || userNameN == null) {
+    userNameN = window.prompt("Enter your name");
+} 
+console.log("Hello", userNameN); */
+/* while( 1 == 1){
+    console.log("HELP! I'M STUCK IN AN INFINITE LOOP!");
+} */
+
+// do while loop 
+let userNameL; 
+do{
+    userNameL = window.prompt("Enter your name"); 
+}while(userNameL == "")
+console.log("Hello", userNameL)
+
+// for loop 
+/* for(let counter = 50; counter <= 100; counter += 1) {
+    console.log(counter);
+} */
+/* for(let i = 1; i <= 10; i += 1) {
+    console.log(i);
+} */
+for(let i = 10; i > 0; i -= 3) {
+    console.log(i);
+}
+console.log("HAPPY NEW YEAR!");
