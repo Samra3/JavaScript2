@@ -368,11 +368,11 @@ console.log("Hello", userNameN); */
 } */
 
 // do while loop 
-let userNameL; 
+/* let userNameL; 
 do{
     userNameL = window.prompt("Enter your name"); 
 }while(userNameL == "")
-console.log("Hello", userNameL)
+console.log("Hello", userNameL) */
 
 // for loop 
 /* for(let counter = 50; counter <= 100; counter += 1) {
@@ -381,7 +381,28 @@ console.log("Hello", userNameL)
 /* for(let i = 1; i <= 10; i += 1) {
     console.log(i);
 } */
-for(let i = 10; i > 0; i -= 3) {
+/* for(let i = 10; i > 0; i -= 3) {
     console.log(i);
 }
-console.log("HAPPY NEW YEAR!");
+console.log("HAPPY NEW YEAR!"); */
+
+// break and continue statements
+
+/* for(let i = 1; i <= 20; i += 1) {
+    if(i == 13) {
+        continue;
+    }
+    console.log(i);
+
+} */
+
+// nested loop 
+let symbol = window.prompt("Enter a symbol to use");
+let rows = window.prompt('Enter # of rows');
+let columns = window.prompt('Enter # of columns');
+for(let i = 1; i <= rows; i += 1) {
+    for(let j = 1; j <= columns; j += 1) {
+        document.getElementById("myRectangle").innerHTML += symbol;
+    }
+    document.getElementById("myRectangle").innerHTML += "<br>";
+}
