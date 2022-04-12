@@ -397,7 +397,7 @@ console.log("HAPPY NEW YEAR!"); */
 } */
 
 // nested loop 
-let symbol = window.prompt("Enter a symbol to use");
+/* let symbol = window.prompt("Enter a symbol to use");
 let rows = window.prompt('Enter # of rows');
 let columns = window.prompt('Enter # of columns');
 for(let i = 1; i <= rows; i += 1) {
@@ -405,4 +405,50 @@ for(let i = 1; i <= rows; i += 1) {
         document.getElementById("myRectangle").innerHTML += symbol;
     }
     document.getElementById("myRectangle").innerHTML += "<br>";
+} */
+
+// functions
+startProgram(); 
+function startProgram(){
+    let userNameQ = "Samra"; 
+    let ageG = 27;
+    happyBirthday(userNameQ, ageG); 
+}
+ 
+function happyBirthday(b, a){
+    console.log("Happy Birthday to you!");
+    console.log("Happy Birthday to you!");
+    console.log("Happy Birthday dear", a);
+    console.log("Happy Birthday to you!");
+    console.log("You are", b," years old!");
+}
+
+// return statement
+
+let area; 
+let width; 
+let height;
+
+width = window.prompt("Enter width");
+height = window.prompt("Enter height");
+
+area = getArea(width, height);
+
+console.log("The area is:", area)
+
+function getArea(width, height){
+    return width * height;
+}
+
+// ternary operator
+
+  /* let adult = checkAge(15); 
+console.log(adult);
+function checkAge(age){
+    return age >= 18 ? true : false; 
+} */
+
+checkWinner(true);
+function checkWinner(win){
+    win ? console.log('YOU WIN!') : console.log('YOU LOSE!');
 }
