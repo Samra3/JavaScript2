@@ -425,7 +425,7 @@ function happyBirthday(b, a){
 
 // return statement
 
-let area; 
+/* let area; 
 let width; 
 let height;
 
@@ -438,7 +438,7 @@ console.log("The area is:", area)
 
 function getArea(width, height){
     return width * height;
-}
+} */
 
 // ternary operator
 
@@ -452,3 +452,24 @@ checkWinner(true);
 function checkWinner(win){
     win ? console.log('YOU WIN!') : console.log('YOU LOSE!');
 }
+
+// var vs let
+/* doSomething();
+function doSomething(){
+    for(var i = 1; i <= 3; i += 1){
+        // console.log(i);
+    }
+}
+
+console.log(i); */
+
+let name = "Samra";
+
+// Template literals 
+let userNameX = "Samra";
+let items = 5; 
+let total = 75;
+
+/* console.log("Hello", userNameX); 
+console.log("You have", items, "items in your cart"); 
+console.log("Your total is $", total); */
